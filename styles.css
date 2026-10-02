@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(99, 102, 241, 0.2),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(14, 165, 233, 0.15),
+            transparent 40%
+        ),
+        #09090b;
+    
+    color: white;
+
+    font-family:
+        Inter,
+        Arial, 
+        sans-serif;
+}
+
+.card{
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: 
+        rgba(255, 255, 255, 0.05);
+    
+    backdrop-filter:
+        blur(16px);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}   
+
+.card:hover {
+    transform: 
+        translateY(-5px);
+    
+    box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 24px
+}
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 48px;
+}
